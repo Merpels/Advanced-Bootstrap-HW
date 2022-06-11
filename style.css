@@ -25,6 +25,10 @@ h1 {
   font-size: 96px;
 }
 
+#main-h1 {
+  padding-bottom: 20px;
+}
+
 h2 {
   font-size: 48px;
 }
@@ -35,7 +39,7 @@ h3 {
 }
 
 .navigation-bar {
-  margin: 12%;
+  margin: 13%;
 }
 
 p {
@@ -55,8 +59,9 @@ p {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
-  position: relative;
-  left: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mb-3 {
@@ -123,4 +128,17 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    text-align: center;
+    font-size: 45px;
+  }
+  img {
+    display: none;
+  }
+  .navigation-links {
+    font-size: 1rem;
+  }
 }
